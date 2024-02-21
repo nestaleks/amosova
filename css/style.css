@@ -30,7 +30,10 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
 }
 h1{
-    font-size: 40px;
+    font-size: 60px;
+}
+h3{
+    font-size: 45px;
 }
 h4{
     font-size: 25px;
@@ -270,8 +273,13 @@ button {
 
 
 
-
-
+.contacts__box{
+    padding: 160px 0;
+}
+.contacts__box-inner{
+    display: flex;
+    gap: 30px;
+}
 
 
 
