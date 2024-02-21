@@ -290,35 +290,25 @@ button {
 }
 .footer__inner {
     display: flex;
-
+    justify-content: space-around;
 }
 .footer__contacts {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-size: 16px;
-    margin-left: 50px;
-    margin-right: auto;
 }
 .footer__contacts-title {
     margin-bottom: 32px;
 }
-.footer__contacts-adress {
-    margin-bottom: 16px;
-}
-.footer__contacts-phonenumber {
-    margin-bottom: 16px;
-}
-.footer__contacts-email {
-}
 .footer__social {
-    margin-left: auto;
-    margin-right: 50px;
+    width: 320px;
 }
 .footer__social-title {
     margin-bottom: 32px;
 }
 .footer__social-links {
-    padding: 17px;
+    padding: 17px 0;
     display: flex;
     gap: 0 20px;
 }
@@ -326,10 +316,8 @@ button {
     width: 30px;
     height: 30px;
 }
-.footer__social-img {
-}
 .footer__social-payment {
-    padding: 17px;
+    padding: 17px 0;
     display: flex;
     gap: 0 60px;
 }
@@ -357,10 +345,20 @@ button {
 @media(max-width: 1280px) {
     .header,
     .footer{
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
     .header__logo img{
         max-height: 70px;
+    }
+    .footer__contacts {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .footer__social-payment {
+        gap: 0 30px;
+    }
+    .footer__social {
+        width: 300px;
     }
 }
 @media(max-width: 768px) {
@@ -405,6 +403,49 @@ button {
     }
     .menu__close{
         display: block;
+    }
+    .footer__inner{
+        justify-content: space-between;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .footer__social-payment img {
+        max-width: 80px;
+    }
+    .footer__social {
+        width: 175px;
+    }
+    .footer__contacts-adress,
+    .footer__contacts-phonenumber,
+    .footer__contacts-email{
+        font-size: 14px;
+    }
+}
+@media(max-width: 570px) {
+    .footer__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__social-title,
+    .footer__contacts-title{
+        margin: 20px auto 20px;
+    }
+    .footer__contacts-adress,
+    .footer__contacts-phonenumber,
+    .footer__contacts-email {
+        margin: 0 auto 17px;
+    }
+    .footer__social-links {
+        justify-content: center;
+        margin: 0 auto 17px;
+        padding: 0;
+    }
+    .footer__social-payment{
+        justify-content: center;
+    }
+    .footer__social-payment img {
+        max-width: 50px;
     }
 }
 @media(max-width: 480px) {
