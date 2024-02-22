@@ -246,8 +246,62 @@ button {
 .priority__img {
     width:calc( ( 100% - 20px ) / 2 );
 }
-
-
+.personality__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.personality__content{
+    padding: 0 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.personality__content-text{
+    font-size: 27px;
+    margin-bottom: 26px;
+}
+.personality__content-list {
+    font-size: 27px;
+    list-style-type: disc;
+}
+.personality__content-item {
+    font-size: 18px;
+    margin-left: 30px;
+}
+.personality__content-item + .personality__content-item{
+    margin-top: 20px;
+}
+.personality__img {
+    width:calc( ( 100% - 20px ) / 2 );
+}
+.consult__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.consult__content{
+    padding: 0 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.consult__content-text{
+    font-size: 27px;
+    margin-bottom: 26px;
+}
+.consult__content-list {
+    font-size: 27px;
+    list-style-type: disc;
+}
+.consult__content-item {
+    font-size: 18px;
+    margin-left: 30px;
+}
+.consult__content-item + .consult__content-item{
+    margin-top: 20px;
+}
+.consult__img {
+    width:calc( ( 100% - 20px ) / 2 );
+}
 
 
 
@@ -445,13 +499,16 @@ button {
         font-size: 40px;
     }
     .about__content-text,
-    .priority__content-text {
+    .priority__content-text,
+    .personality__content-text,
+    .consult__content-text{
         font-size: 22px;
         line-height: 1;
         margin-bottom: 20px;
     }
     .about__content-item + .about__content-item,
-    .priority__content-item + .priority__content-item{
+    .priority__content-item + .priority__content-item,
+    .personality__content-item + .personality__content-item{
         margin-top: 10px;
     }
 }
@@ -463,7 +520,10 @@ button {
     .header__logo img{
         max-height: 70px;
     }
-    .about__content-text {
+    .about__content-text,
+    .priority__content-text,
+    .personality__content-text,
+    .consult__content-text {
         font-size: 20px;
         margin-bottom: 10px;
     }
@@ -499,6 +559,9 @@ button {
     }
 }
 @media(max-width: 1024px) {
+    .section-padding{
+        padding: 40px 0;
+    }
     .contacts__box-content{
         font-size: 20px;
     }
@@ -509,17 +572,21 @@ button {
         font-size: 30px;
     }
     .about__content-text,
-    .priority__content-text {
+    .priority__content-text,
+    .personality__content-text,
+    .consult__content-text {
         font-size: 18px;
         line-height: 1;
     }
     .about__content-item,
-    .priority__content-item {
+    .priority__content-item,
+    .personality__content-item {
         font-size: 14px;
         margin-left: 15px;
     }
     .about__content-item + .about__content-item,
-    .priority__content-item + .priority__content-item{
+    .priority__content-item + .priority__content-item,
+    .personality__content-item + .personality__content-item{
         margin-top: 2px;
     }
 }
@@ -529,9 +596,6 @@ button {
     }
     h4 {
         font-size: 20px;
-    }
-    .section-padding{
-        padding: 40px 0;
     }
     .header{
         padding: 45px;
@@ -592,27 +656,35 @@ button {
         font-size: 15px;
     }
     .about__inner,
-    .priority__inner{
+    .priority__inner,
+    .personality__inner,
+    .consult__inner{
         flex-direction: column;
     }
-    .about__img{
+    .about__img,
+    .personality__img{
         padding: 17px;
         width: 100%;
     }
     .about__content-text,
-    .priority__content-text{
+    .priority__content-text,
+    .personality__content-text,
+    .consult__content-text{
         font-size: 24px;
         margin-bottom: 24px;
     }
     .about__content-item,
-    .priority__content-item{
+    .priority__content-item,
+    .personality__content-item{
         font-size: 18px;
     }
     .about__content-item + .about__content-item,
-    .priority__content-item + .priority__content-item{
+    .priority__content-item + .priority__content-item,
+    .personality__content-item + .personality__content-item{
         margin-top: 10px;
     }
-    .priority__img{
+    .priority__img,
+    .consult__img{
         order: -1;
         padding: 17px;
         width: 100%;
@@ -693,15 +765,19 @@ button {
         padding: 30px;
     }
     .about__content,
-    .priority__content {
+    .priority__content,
+    .personality__inner {
         padding: 0;
     }
     .about__content-text,
-    .priority__content-text {
+    .priority__content-text,
+    .personality__content-text,
+    .consult__content-text {
         font-size: 18px;
     }
     .about__content-item,
-    .priority__content-item {
+    .priority__content-item,
+    .personality__content-item {
         font-size: 16px;
     }
 }
