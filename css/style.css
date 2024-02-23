@@ -26,6 +26,35 @@ html{
           box-sizing: inherit; 
         
 }
+
+
+/* плавна анімація завантаження зображень */
+img{
+    animation-name: Appearance;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+@-webkit-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+  
+@-o-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+  
+@-moz-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+  
+@keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
 h1, h2, h3, h4, h5, h6{
     font-weight: 700;
 }
