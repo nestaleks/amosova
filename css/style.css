@@ -306,6 +306,7 @@ button {
 .consult__inner{
     display: flex;
     justify-content: space-between;
+
 }
 .consult__content{
     padding: 0 17px;
@@ -331,79 +332,141 @@ button {
 .consult__img {
     width:calc( ( 100% - 20px ) / 2 );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.amosova__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.amosova__img {
+    width:calc( ( 100% - 20px ) / 2 );
+}
+.amosova__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+.amosova__content-text{
+    font-size: 18px;
+    line-height: 33px;
+}
+.amosova__content-text a{
+    font-weight: 700;
+    font-size: 20px;
+}
+.amosova__content-text + .amosova__content-text{
+    margin-top: 33px;
+}
+.cardiology-1__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.cardiology-1__img {
+    width:calc( ( 100% - 20px ) / 2 );
+    height: 100%;
+}
+.cardiology-1__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+.cardiology-1__content-text {
+    font-size: 18px;
+    line-height: 33px;
+}
+.cardiology-1__content-list {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    line-height: 33px;
+}
+.cardiology-1__content-item {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.cardiology-1__contacts-phonenumber {
+}
+.cardiology-2__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.cardiology-2__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+.cardiology-2__content-list {
+    font-size: 18px;
+    line-height: 33px;
+}
+.cardiology-2__content-item {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.cardiology-2__img {
+    width:calc( ( 100% - 20px ) / 2 );
+    height: 100%;
+}
+.cardiology-3__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.cardiology-3__img {
+    width:calc( ( 100% - 20px ) / 2 );
+    height: 100%;
+}
+.cardiology-3__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+.cardiology-3__content-list {
+    font-size: 18px;
+    line-height: 33px;
+}
+.cardiology-3__content-item {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.cardiology-4__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.cardiology-4__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+.cardiology-4__content-text {
+    font-size: 18px;
+    line-height: 33px;
+}
+.cardiology-4__img {
+    width:calc( ( 100% - 20px ) / 2 );
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.customers td{
+    padding: 12px;
+    width: 100%;
+}
+.customers td:nth-child(2){
+    padding: 0 100px;
+}
+.customers tr:nth-child(odd){
+    background-color: #f3f3f3;
+}
+.customers tr:hover{
+    background-color: #e0e0e0;
+}
 
 
 
@@ -430,17 +493,6 @@ button {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* *************СТОРІНКА КОНТАКТИ*********** */
 .contacts__box{
     padding: 160px 0;
@@ -465,8 +517,6 @@ button {
     text-align: center;
     margin-bottom: 50px;
 }
-
-
 
 /* *************ФУТЕР*********** */
 .footer{
@@ -517,6 +567,26 @@ button {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /******* АДАПТИВ*******/
 @media(max-width: 1440px) {
     .header,
@@ -544,6 +614,16 @@ button {
     .priority__content-item + .priority__content-item,
     .personality__content-item + .personality__content-item{
         margin-top: 10px;
+    }
+    .amosova__content-text{
+        line-height: normal;
+    }
+    .amosova__content-text a{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .amosova__content-text + .amosova__content-text{
+        margin-top: 33px;
     }
 }
 @media(max-width: 1280px) {
@@ -591,6 +671,13 @@ button {
     .footer__social {
         width: 300px;
     }
+    .amosova__content{
+        padding-left: 30px;
+    }
+    .amosova__content-text + .amosova__content-text{
+        margin-top: 25px;
+    }
+
 }
 @media(max-width: 1024px) {
     .section-padding{
@@ -622,6 +709,19 @@ button {
     .priority__content-item + .priority__content-item,
     .personality__content-item + .personality__content-item{
         margin-top: 2px;
+    }
+    .amosova__content{
+        padding-left: 0;
+    }
+    .amosova__content-text{
+        font-size: 16px;
+        line-height: 1;
+    }
+    .amosova__content-text a{
+        font-size: 18px;
+    }
+    .amosova__content-text + .amosova__content-text{
+        margin-top: 10px;
     }
 }
 @media(max-width: 768px) {
@@ -750,6 +850,22 @@ button {
     .footer__contacts-email{
         font-size: 14px;
     }
+    .amosova__inner{
+        flex-direction: column;
+    }
+    .amosova__img{
+        padding: 17px;
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: center right;
+    }
+    .amosova__content-text{
+        font-size: 18px;    
+    }
+    .amosova__content-text + .amosova__content-text{
+        margin-top: 15px;
+    }
 }
 @media(max-width: 570px) {
     .top__content{
@@ -816,5 +932,9 @@ button {
     .priority__content-item,
     .personality__content-item {
         font-size: 16px;
+    }
+    .amosova__img{
+        padding: 0;
+        height: 500px;
     }
 }
