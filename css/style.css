@@ -400,7 +400,9 @@ article__img - картинка, що входить у блок inner */
 .therapy-1__phonenumber,
 .surgery-1__contacts-phonenumber,
 .phlebology-1__contacts-phonenumber,
-.rheumatology-1__contacts-phonenumber {
+.rheumatology-1__contacts-phonenumber,
+.endocrinology-1__contacts-phonenumber,
+.neurology-1__contacts-phonenumber {
     font-weight: 700;
 }
 .customers td{
@@ -815,7 +817,8 @@ article__img - картинка, що входить у блок inner */
     .phlebology-2__img,
     .phlebology-4__img,
     .rheumatology-2__img,
-    .endocrinology-2__img{
+    .endocrinology-2__img,
+    .neurology-2__img{
         order: -1;
     }
     .surgery-2__img,
