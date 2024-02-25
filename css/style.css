@@ -402,7 +402,8 @@ article__img - картинка, що входить у блок inner */
 .phlebology-1__contacts-phonenumber,
 .rheumatology-1__contacts-phonenumber,
 .endocrinology-1__contacts-phonenumber,
-.neurology-1__contacts-phonenumber {
+.neurology-1__contacts-phonenumber,
+.psychiatry-1__contacts-phonenumber {
     font-weight: 700;
 }
 .customers td{
@@ -411,7 +412,7 @@ article__img - картинка, що входить у блок inner */
 }
 .customers td:nth-child(2){
     vertical-align: middle;
-    padding-right: 100px;
+    padding-right: 50px;
 }
 .customers tr:nth-child(odd){
     background-color: #f3f3f3;
@@ -419,10 +420,14 @@ article__img - картинка, що входить у блок inner */
 .customers tr:hover{
     background-color: #e0e0e0;
 }
+.customers p{
+    width: 100px;
+}
 .phlebology-1__content-list{
     margin-top: 33px;
 }
-.phlebology-2__content-list{
+.phlebology-2__content-list,
+.dermatology-2__content-list{
     margin-bottom: 33px;
 }
 .rheumatology-1__content-list{
@@ -654,7 +659,10 @@ article__img - картинка, що входить у блок inner */
         line-height: normal;
     }
     .customers td:nth-child(2){
-        padding-right: 50px;
+        padding-right: 12px;
+    }
+    .customers p{
+        width: 80px;
     }
 
 }
@@ -818,7 +826,9 @@ article__img - картинка, що входить у блок inner */
     .phlebology-4__img,
     .rheumatology-2__img,
     .endocrinology-2__img,
-    .neurology-2__img{
+    .neurology-2__img,
+    .psychiatry-1__img,
+    .dermatology-2__img{
         order: -1;
     }
     .surgery-2__img,
@@ -873,9 +883,6 @@ article__img - картинка, що входить у блок inner */
     }
     .footer__social-payment img {
         max-width: 50px;
-    }
-    .customers td:nth-child(2){
-        padding-right: 20px;
     }
 }
 @media(max-width: 480px) {
