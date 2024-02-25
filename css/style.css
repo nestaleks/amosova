@@ -377,6 +377,9 @@ article__img - картинка, що входить у блок inner */
     font-size: 18px;
     line-height: 33px;
 }
+.article__list + .article__list{
+    margin-top: 33px;
+}
 .article__list-item{
     list-style-type: disc;
     margin-left: 30px;
@@ -395,7 +398,9 @@ article__img - картинка, що входить у блок inner */
 }
 .cardiology-1__contacts-phonenumber,
 .therapy-1__phonenumber,
-.surgery-1__contacts-phonenumber {
+.surgery-1__contacts-phonenumber,
+.phlebology-1__contacts-phonenumber,
+.rheumatology-1__contacts-phonenumber {
     font-weight: 700;
 }
 .customers td{
@@ -411,6 +416,15 @@ article__img - картинка, що входить у блок inner */
 }
 .customers tr:hover{
     background-color: #e0e0e0;
+}
+.phlebology-1__content-list{
+    margin-top: 33px;
+}
+.phlebology-2__content-list{
+    margin-bottom: 33px;
+}
+.rheumatology-1__content-list{
+    margin-top: 33px;
 }
 
 
@@ -590,7 +604,7 @@ article__img - картинка, що входить у блок inner */
     
 }
 @media(max-width: 1024px) {
-    .section-padding{
+    .article-padding{
         padding: 40px 0;
     }
     .contacts__box-content{
@@ -643,6 +657,9 @@ article__img - картинка, що входить у блок inner */
 
 }
 @media(max-width: 768px) {
+    .article-padding{
+        padding: 25px 0;
+    }
     h3{
         font-size: 30px;
     }
@@ -794,10 +811,16 @@ article__img - картинка, що входить у блок inner */
     .cardiology-2__img,
     .cardiology-4__img,
     .therapy-2__img,
-    .surgery-4__img{
+    .surgery-4__img,
+    .phlebology-2__img,
+    .phlebology-4__img,
+    .rheumatology-2__img,
+    .endocrinology-2__img{
         order: -1;
     }
-    .surgery-2__img{
+    .surgery-2__img,
+    .phlebology-3__img,
+    .rheumatology-3__img{
         order: -1;
         height: 500px;
         object-fit: cover;
