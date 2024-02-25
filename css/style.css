@@ -386,6 +386,7 @@ button {
     margin-left: 30px;
 }
 .cardiology-1__contacts-phonenumber {
+    font-weight: 700;
 }
 .cardiology-2__inner {
     display: flex;
@@ -448,6 +449,9 @@ button {
     font-size: 18px;
     line-height: 33px;
 }
+.cardiology-4__content-text + .cardiology-4__content-text{
+    margin-top: 33px;
+}
 .cardiology-4__img {
     width:calc( ( 100% - 20px ) / 2 );
     height: 100%;
@@ -459,7 +463,8 @@ button {
     width: 100%;
 }
 .customers td:nth-child(2){
-    padding: 0 100px;
+    vertical-align: middle;
+    padding-right: 100px;
 }
 .customers tr:nth-child(odd){
     background-color: #f3f3f3;
@@ -467,7 +472,70 @@ button {
 .customers tr:hover{
     background-color: #e0e0e0;
 }
-
+.therapy-1__inner {
+}
+.therapy-1__text {
+    font-size: 18px;
+    line-height: 33px;
+}
+.therapy-1__phonenumber {
+    font-weight: 700;
+}
+.therapy-2__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.therapy-2__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+.therapy-2__text {
+    font-size: 18px;
+    line-height: 33px;
+}
+.therapy-1__text + .therapy-1__text,
+.therapy-2__text + .therapy-2__text{
+    margin-top: 33px;
+}
+.therapy-2__img {
+    width:calc( ( 100% - 20px ) / 2 );
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.therapy-3__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.therapy-3__img {
+    width: calc( ( 100% - 20px ) / 2 );
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.therapy-3__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+.therapy-3__content-list {
+    line-height: 33px;
+}
+.therapy-3__content-item {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.therapy-4__inner {
+}
+.therapy-4__text {
+    font-size: 18px;
+    line-height: 33px;
+}
 
 
 
@@ -615,7 +683,10 @@ button {
     .personality__content-item + .personality__content-item{
         margin-top: 10px;
     }
-    .amosova__content-text{
+    .amosova__content-text,
+    .cardiology-1__content-text,
+    .cardiology-2__content-text,
+    .cardiology-4__content-text{
         line-height: normal;
     }
     .amosova__content-text a{
@@ -624,6 +695,16 @@ button {
     }
     .amosova__content-text + .amosova__content-text{
         margin-top: 33px;
+    }
+    .cardiology-2__content-list p{
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    .therapy-1__text,
+    .therapy-2__text,
+    .therapy-3__content-list,
+    .therapy-4__text{
+        line-height: normal;
     }
 }
 @media(max-width: 1280px) {
@@ -671,13 +752,17 @@ button {
     .footer__social {
         width: 300px;
     }
-    .amosova__content{
+    .amosova__content,
+    .cardiology-1__content,
+    .cardiology-2__content,
+    .cardiology-3__content,
+    .cardiology-4__content{
         padding-left: 30px;
     }
     .amosova__content-text + .amosova__content-text{
         margin-top: 25px;
     }
-
+    
 }
 @media(max-width: 1024px) {
     .section-padding{
@@ -710,10 +795,18 @@ button {
     .personality__content-item + .personality__content-item{
         margin-top: 2px;
     }
-    .amosova__content{
+    .amosova__content,
+    .cardiology-1__content,
+    .cardiology-2__content,
+    .cardiology-3__content,
+    .cardiology-4__content{
         padding-left: 0;
     }
-    .amosova__content-text{
+    .amosova__content-text,
+    .cardiology-1__content-text,
+    .cardiology-2__content-text,
+    .cardiology-3__content-text,
+    .cardiology-4__content-text{
         font-size: 16px;
         line-height: 1;
     }
@@ -723,6 +816,28 @@ button {
     .amosova__content-text + .amosova__content-text{
         margin-top: 10px;
     }
+    .cardiology-1__content-list,
+    .cardiology-2__content-list,
+    .cardiology-3__content-list,
+    .cardiology-4__content-list{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .customers td:nth-child(2){
+        padding-right: 50px;
+    }
+    .therapy-2__content,
+    .therapy-3__content{
+        padding-left: 0;
+    }
+    .therapy-1__text,
+    .therapy-2__text,
+    .therapy-3__content-list,
+    .therapy-4__text{
+        line-height: 1;
+        font-size: 16px;
+    }
+
 }
 @media(max-width: 768px) {
     h3{
@@ -850,7 +965,13 @@ button {
     .footer__contacts-email{
         font-size: 14px;
     }
-    .amosova__inner{
+    .amosova__inner,
+    .cardiology-1__inner,
+    .cardiology-2__inner,
+    .cardiology-3__inner,
+    .cardiology-4__inner,
+    .therapy-2__inner,
+    .therapy-3__inner{
         flex-direction: column;
     }
     .amosova__img{
@@ -865,6 +986,39 @@ button {
     }
     .amosova__content-text + .amosova__content-text{
         margin-top: 15px;
+    }
+    .cardiology-1__img,
+    .cardiology-2__img,
+    .cardiology-3__img,
+    .cardiology-4__img,
+    .therapy-2__img,
+    .therapy-3__img{
+        padding: 17px;
+        width: 100%;
+    }
+    .cardiology-2__img,
+    .cardiology-4__img,
+    .therapy-2__img{
+        order: -1;
+    }
+    .cardiology-1__content-text,
+    .cardiology-2__content-text,
+    .cardiology-3__content-text,
+    .cardiology-4__content-text{
+        font-size: 18px;
+    }
+    .cardiology-1__content-list,
+    .cardiology-2__content-list,
+    .cardiology-3__content-list,
+    .cardiology-4__content-list{
+        font-size: 18px;
+    }
+
+    .therapy-1__text,
+    .therapy-2__text,
+    .therapy-3__content-list,
+    .therapy-4__text{
+        font-size: 18px;
     }
 }
 @media(max-width: 570px) {
@@ -910,6 +1064,9 @@ button {
     }
     .footer__social-payment img {
         max-width: 50px;
+    }
+    .customers td:nth-child(2){
+        padding-right: 20px;
     }
 }
 @media(max-width: 480px) {
