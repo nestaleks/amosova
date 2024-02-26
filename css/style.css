@@ -203,7 +203,6 @@ button {
     margin-bottom: 48px;
 }
 .top__phonenumber {
-    font-weight: 700;
     font-size: 44px;
     border-bottom: 1px solid #000000;
     width: fit-content;
@@ -392,22 +391,6 @@ article__img - картинка, що входить у блок inner */
     font-weight: 700;
     font-size: 20px;
 }
-.cardiology-1__content-list {
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-.cardiology-1__contacts-phonenumber,
-.therapy-1__phonenumber,
-.surgery-1__contacts-phonenumber,
-.phlebology-1__contacts-phonenumber,
-.rheumatology-1__contacts-phonenumber,
-.endocrinology-1__contacts-phonenumber,
-.neurology-1__contacts-phonenumber,
-.psychiatry-1__contacts-phonenumber,
-.cardiology-kids-1__contacts-phonenumber,
-.echocardiography-1__contacts-phonenumber {
-    font-weight: 700;
-}
 .customers td{
     padding: 12px;
     width: 100%;
@@ -425,27 +408,34 @@ article__img - картинка, що входить у блок inner */
 .customers p{
     width: 100px;
 }
-.phlebology-1__content-list{
+.phlebology-1__content-list,
+.usd-1__content-list{
     margin-top: 33px;
+    margin-bottom: 33px;
 }
 .phlebology-2__content-list,
 .dermatology-2__content-list,
-.echocardiography-2__content-list,
-.usd-1__content-list{
+.echocardiography-2__content-list{
     margin-bottom: 33px;
 }
+.phlebology-4__content-list,
 .rheumatology-1__content-list,
+.rheumatology-2__content-list,
+.rheumatology-3__content-list,
+.neurology-1__content-list,
+.neurology-3__content-list,
+.dermatology-1__content-list,
+.dermatology-3__content-list,
 .usd-2__content-list,
-.functional_diagnostics-1__content-list{
+.usd-3__content-list,
+.functional_diagnostics-1__content-list,
+.functional_diagnostics-2__content-list{
     margin-top: 33px;
-}
-.cardiology-kids-1__content-text:nth-child(3),
-.usd-3__content-text:nth-child(2){
-    margin-bottom: 33px;
 }
 .cardiology-kids-2__content-text{
     margin-bottom: 33px;
 }
+.cardiology-kids-1__content-list,
 .functional_diagnostics-5__content-list{
     margin-top: 33px;
     margin-bottom: 33px;
