@@ -403,7 +403,9 @@ article__img - картинка, що входить у блок inner */
 .rheumatology-1__contacts-phonenumber,
 .endocrinology-1__contacts-phonenumber,
 .neurology-1__contacts-phonenumber,
-.psychiatry-1__contacts-phonenumber {
+.psychiatry-1__contacts-phonenumber,
+.cardiology-kids-1__contacts-phonenumber,
+.echocardiography-1__contacts-phonenumber {
     font-weight: 700;
 }
 .customers td{
@@ -427,15 +429,74 @@ article__img - картинка, що входить у блок inner */
     margin-top: 33px;
 }
 .phlebology-2__content-list,
-.dermatology-2__content-list{
+.dermatology-2__content-list,
+.echocardiography-2__content-list,
+.usd-1__content-list{
     margin-bottom: 33px;
 }
-.rheumatology-1__content-list{
+.rheumatology-1__content-list,
+.usd-2__content-list,
+.functional_diagnostics-1__content-list{
     margin-top: 33px;
 }
-
-
-
+.cardiology-kids-1__content-text:nth-child(3),
+.usd-3__content-text:nth-child(2){
+    margin-bottom: 33px;
+}
+.cardiology-kids-2__content-text{
+    margin-bottom: 33px;
+}
+.functional_diagnostics-5__content-list{
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+.lab-1__adress{
+    text-decoration: underline;
+}
+.lab-1__content-item-link{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.price__title{
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+details summary {
+    list-style: none;
+}
+details + details{
+    margin-top: 25px;
+}
+details table{
+    margin-top: 10px;
+}
+.price__content-list{
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+.price__content-item{
+    list-style-type: decimal;
+}
+.public__title{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.public__text{
+    line-height: 33px;
+}
+.public__text + .public__text{
+    margin-top: 25px;
+}
+.public__content-list{
+    line-height: 33px;
+}
+.public__content-item{
+    list-style-type: disc;
+    margin-left: 40px;
+}
 
 
 
@@ -828,7 +889,12 @@ article__img - картинка, що входить у блок inner */
     .endocrinology-2__img,
     .neurology-2__img,
     .psychiatry-1__img,
-    .dermatology-2__img{
+    .dermatology-2__img,
+    .cardiology-kids-2__img,
+    .echocardiography-2__img,
+    .usd-2__img,
+    .functional_diagnostics-2__img,
+    .functional_diagnostics-4__img{
         order: -1;
     }
     .surgery-2__img,
