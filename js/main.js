@@ -21,3 +21,14 @@ $('.menu__btn').on('click', function () {
 
 
 
+  console.log(Instafeed)
+  var feed = new Instafeed({
+    accessToken: InstagramToken,
+    transform: function(item) {
+      var d = new Date(item.timestamp);
+      item.date = [d.getDate(), d.getMonth(), d.getYear()].join('/');
+      return item;
+    }
+  });
+  
+  feed.run();
