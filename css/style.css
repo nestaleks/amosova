@@ -461,8 +461,24 @@ article__img - картинка, що входить у блок inner */
     margin-bottom: 25px;
     font-weight: 700;
 }
+details{
+    position: relative;
+    padding-left: 25px;
+}
 details summary {
     list-style: none;
+}
+details::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 5px;
+    right: 0;
+    width: 15px;
+    background-image: url(../images/arrow-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 details + details{
     margin-top: 25px;
