@@ -43,33 +43,6 @@ html{
 }
 
 
-/* плавна анімація завантаження зображень */
-img{
-    animation-name: Appearance;
-    animation-duration: 1.5s;
-    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
-}
-@-webkit-keyframes Appearance {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-  
-@-o-keyframes Appearance {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-  
-@-moz-keyframes Appearance {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-  
-@keyframes Appearance {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-
 h1, h2, h3, h4, h5, h6{
     font-weight: 700;
 }
@@ -363,15 +336,13 @@ button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+/* анімація завантаження зображень */
 .services__item-img{
     width: 100%;
-    -webkit-animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: scale-up-center 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;        
 }
-/* .services__item {
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-} */
+
 /**
  * ----------------------------------------
  * animation scale-up-center
