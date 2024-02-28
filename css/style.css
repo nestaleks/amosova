@@ -193,7 +193,7 @@ button {
 
 /* *************ОСНОВНА ЧАСТИНА СТОРІНКИ*********** */
 .article-padding {
-    padding: 65px 0;
+    padding: 65px 25px;
 }
 .top__inner {
     display: flex;
@@ -457,6 +457,9 @@ article__img - картинка, що входить у блок inner */
     font-weight: 700;
     text-decoration: underline;
 }
+.therapy-1__inner{
+    padding: 0 60px;
+}
 .price__title{
     margin-bottom: 25px;
     font-weight: 700;
@@ -690,7 +693,7 @@ details table{
 }
 @media(max-width: 1024px) {
     .article-padding{
-        padding: 40px 0;
+        padding: 40px 20px;
     }
     .contacts__box-content{
         font-size: 20px;
@@ -728,6 +731,9 @@ details table{
     }
     .amosova__content-text a{
         font-size: 18px;
+    }
+    .therapy-1__inner{
+        padding: 0;
     }
     .article__text + .article__text{
         margin-top: 10px;
