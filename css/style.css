@@ -1,22 +1,35 @@
 @font-face {
-    font-family: '2MASS J1808';
-    src: url('../fonts/2MASSJ1808-Normal.woff2') format('woff2'),
-        url('../fonts/2MASSJ1808-Normal.woff') format('woff'),
-        url('../fonts/2MASSJ1808-Normal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+		url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Light.eot');
+	src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+		url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Light.woff') format('woff'),
+		url('../fonts/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
 
-@font-face {
-    font-family: '2MASS J1808';
-    src: url('../fonts/2MASSJ1808-Heavy.woff2') format('woff2'),
-        url('../fonts/2MASSJ1808-Heavy.woff') format('woff'),
-        url('../fonts/2MASSJ1808-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
+
 
 html{
     box-sizing: border-box;
@@ -72,11 +85,11 @@ h4{
 html,
 body {
     height: 100%;
-    font-family: '2MASS J1808';
+    font-family: 'Proxima Nova';
     color: #000000;
     font-size: 18px;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 300;
 }
 a {
     text-decoration: none;
@@ -86,7 +99,7 @@ ul {
     list-style: none;
 }
 button {
-    font-family: '2MASS J1808';
+    font-family: 'Proxima Nova';
     background-color: transparent;
     border: none;
     padding: 0;
@@ -156,6 +169,7 @@ button {
     justify-content: space-between;
     gap: 25px;
     z-index: 3;
+    font-weight: 400;
 }
 .menu--close{
     display: none;
