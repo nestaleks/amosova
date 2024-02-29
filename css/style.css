@@ -337,19 +337,67 @@ button {
     grid-template-columns: repeat(4, 1fr);
 }
 /* анімація завантаження зображень */
+.services__item{
+    opacity: 0; 
+}
 .services__item-img{
     width: 100%;
-    opacity: 0; 
-    position: relative;
+
 }
-.services__item-img.element-show{ 
-    position: relative; 
-    -webkit-animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;    
+.services__item.element-show{ 
+    -webkit-animation: scale-up-center 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;    
     opacity: 1; 
     transition-duration: 1.0s; 
     }
-
+.services__item:nth-child(1){
+    animation-delay: 0.0s;
+}
+.services__item:nth-child(2){
+    animation-delay: 0.05s;
+}
+.services__item:nth-child(3){
+    animation-delay: 0.1s;
+}
+.services__item:nth-child(4){
+    animation-delay: 0.15s;
+}
+.services__item:nth-child(5){
+    animation-delay: 0.2s;
+}
+.services__item:nth-child(6){
+    animation-delay: 0.25s;
+}
+.services__item:nth-child(7){
+    animation-delay: 0.3s;
+}
+.services__item:nth-child(8){
+    animation-delay: 0.35s;
+}
+.services__item:nth-child(9){
+    animation-delay: 0.4s;
+}
+.services__item:nth-child(10){
+    animation-delay: 0.45s;
+}
+.services__item:nth-child(11){
+    animation-delay: 0.5s;
+}
+.services__item:nth-child(12){
+    animation-delay: 0.55s;
+}
+.services__item:nth-child(13){
+    animation-delay: 0.6s;
+}
+.services__item:nth-child(14){
+    animation-delay: 0.65s;
+}
+.services__item:nth-child(15){
+    animation-delay: 0.7s;
+}
+.services__item:nth-child(16){
+    animation-delay: 0.75s;
+}
     
 /* *
  * ----------------------------------------
@@ -358,8 +406,8 @@ button {
  */
  @-webkit-keyframes scale-up-center {
     0% {
-      -webkit-transform: scale(0.7);
-              transform: scale(0.7);
+      -webkit-transform: scale(0);
+              transform: scale(0);
     }
     100% {
       -webkit-transform: scale(1);
@@ -368,8 +416,8 @@ button {
 }
 @keyframes scale-up-center {
     0% {
-      -webkit-transform: scale(0.7);
-              transform: scale(0.7);
+      -webkit-transform: scale(0);
+              transform: scale(0);
     }
     100% {
       -webkit-transform: scale(1);
