@@ -19,3 +19,13 @@ $('.menu__btn').on('click', function () {
 	$('.menu__list').removeClass('menu--open');
   });
 
+
+  $('services__item-img').each(function(fadeInImg) {
+    $(this).delay(fadeInImg * 50).fadeIn(100);
+  });
+
+
+
+  
+    
+    

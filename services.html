@@ -166,24 +166,27 @@
     </footer>
   </div>
   <script src="./js/main.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script>
   <!-- повільне завантаження при прокручуванні -->
   <script>
-    function onEntry(entry) { 
-      entry.forEach(change => { 
-        if (change.isIntersecting) { 
-         change.target.classList.add('element-show'); 
-         
-        } 
-      }); 
-    } 
-        let options = { 
-      threshold: [0.5] }; 
-    let observer = new IntersectionObserver(onEntry, options); 
-    let elements = document.querySelectorAll('.services__item-img'); 
-     
-    for (let elm of elements) { 
-      observer.observe(elm); 
-    }
+  function onEntry(entry) { 
+    entry.forEach(change => { 
+      if (change.isIntersecting) { 
+       change.target.classList.add('element-show'); 
+       
+      } 
+    }); 
+  } 
+      let options = { 
+    threshold: [0.5] }; 
+  let observer = new IntersectionObserver(onEntry, options); 
+  let elements = document.querySelectorAll('.services__item-img'); 
+   
+  for (let elm of elements) { 
+    observer.observe(elm); 
+  }
 </script>
 </body>
 </html>
